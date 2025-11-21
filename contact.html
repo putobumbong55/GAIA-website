@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <!-- meta tags describing metadata within an HTML document -->
+    <meta charset="UTF-8">
+    <meta name="description" content="GAIA website">
+    <meta name="keywords" content="HTML, CSS, Website"> <!-- keywords for search engines -->
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0"> <!-- makes website responsive -->
+
+    <title> GAIA </title>
+    <link rel="icon" type="image/png" href="images/logo.png"/> <!-- favicon -->
+
+    <!-- font links, favicon, stylesheet and icon library-->
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+<!-- navigation bar -->
+<header class ="header"> 
+<!-- GAIA logo -->
+    <div class="brand">
+        <h1>
+            <img src ="images/logo.png" alt = "GAIA logo">
+            GAIA
+        </h1>
+        <h3>
+            For Earth, For Our Future <!-- short motto -->
+        </h3>
+    </div>
+    <nav>
+        <ul>
+            <li> <a href="index.html"> Home </a>
+            <li><a href="about.html"> About Us </a></li>
+            <li><a href="forests.html"> Protect the Forests </a></li>
+            <li><a href="seas.html"> Save Our Seas </a></li>
+            <li><a href="recycling.html"> Revive Recycling </a></li>
+            <li><a href="activism.html"> Take Action </a></li>
+            <li><a href="contact.html"> Contact Us </a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- sections -->
+
+<section class="contact">
+    <h1> Contact Us</h1>
+</section>
+
+<section class="get-in-touch">
+        <h2> Get in Touch </h2>
+            <p> We'd love to hear from you. Reach out through any of the methods below.</p>  
+</section>
+
+<section class="contact-details-container">
+
+    <div class="contact-details-items">
+        <h2> Contact Details </h2>
+        <h4> Email Us</h4>
+            <p> For all general enquiries and questions, send us an email and we'll respond within 24 hours. </p>
+            <p> Email: <a href="mailto:GAIA@gmail.com">GAIA@gmail.com</a> </p> <br>
+
+        <h4> Call Us</h4>
+            <p> Speak directly with our team during business hours.</p>
+            <p> Telephone: <a href="tel:+4733378901">+47 333 78 901</a></p> <br>
+        
+        <h4> Follow Us </h4>
+            <p> Stay connected through our social media channels for the latest updates and campaigns.</p>
+                <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"> </a>
+                <a href="https://x.com/" class="fa fa-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a> <br><br>
+        
+
+        <h4> Visit Us </h4>
+            <p> Our main office is located at the heart of the city.</p>
+            <p> Address: The Gaia Foundation, 44 Grand Parade, Brighton, East Sussex, BN2 9QA</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317543.65782407415!2d-0.6855755500000055!3d51.5533861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761af6839c37cf%3A0x5388644f385ec21c!2sThe%20Gaia%20Foundation!5e0!3m2!1sen!2suk!4v1763118957208!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br>
+        
+        <h4> Office Hours</h4>
+            <p> Monday-Friday: 9:00 AM - 6:00 PM </p>
+            <p> Saturday: 10:00 AM - 4:00 PM </p>
+            <p> Sunday: Closed </p>
+            
+        </div>
+
+<!-- form  --> 
+    <div class="contact-form">
+    <h2> Contact Form </h2>
+    <p> Please fill out the form below to get in touch with us:</p>
+    <form>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" required>
+        <br><br>
+
+<!-- Communication Preferences Section -->
+<div class="communication-preferences">
+    <fieldset>
+        <legend>What interests you?</legend>
+        <p>Choose the topics you care about most:</p>
+        
+        <div class="radio-group">
+            <div class="radio-option">
+                <input type="checkbox" id="all-updates" name="communication_prefs" value="all-updates">
+                <label for="all-updates">All GAIA Updates</label>
+            </div>
+            
+            <div class="radio-option">
+                <input type="checkbox" id="campaign-updates" name="communication_prefs" value="campaign-updates">
+                <label for="campaign-updates">Campaign News & Victories</label>
+            </div>
+            
+            <div class="radio-option">
+                <input type="checkbox" id="event-updates" name="communication_prefs" value="event-updates">
+                <label for="event-updates">Event & Volunteer Opportunities</label>
+            </div>
+        </div>
+    </fieldset>
+</div>
+    
+<!-- dropdown menu -->
+     <label for="location">Location:</label><br>
+        <select id="location" name="location">
+            <option value="Midlothian">Midlothian</option>
+            <option value="West Lothian">West Lothian</option>
+            <option value="East Lothian">East Lothian</option>
+            <option value="Edinburgh">Edinburgh</option>
+        </select>
+        <br><br>
+        
+        <!-- text area -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="25" placeholder="  Write your message here...">
+        </textarea><br>
+        <!-- submit button -->
+        <input type="submit" value="Submit">
+
+    </form>
+    </div>
+</section>
+
+<section class="main-newsletter">
+    <div>
+        <h2> Be the Change. Stay Informed. </h2> 
+            <p> Join our community and get a monthly digest of our biggest victories, ongoing campains, and 
+                simple actions you can take to protect the planet
+            </p>
+            <form> 
+                <label for="fname">Full Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" required><br><br>
+                <input type="submit" value="Submit">
+            </form>
+    </div>
+</section>
+
+</body>
+
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-contact">
+            <h3> Contact</h3>
+                <ul> 
+                    <li> <p><a href="tel:+4733378901">+47 333 78 901</a></p> </li>
+                    <li> <p><a href="mailto:GAIA@gmail.com">GAIA@gmail.com</a></p> </li>
+                </ul>
+        </div>
+
+        <div class="footer-explore"> 
+            <h3> Explore </h3>
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="about.html">About Us</a></li>
+                <li> <a href="forests.html">Protect the Forests</a></li>
+                <li> <a href="seas.html"> Save Our Seas</a></li>
+                <li> <a href="recycling.html">Revive Recycling</a></li>
+                <li> <a href="activism.html">Take Action</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-newsletter">
+            <h3> Newsletter SignUp </h3>
+                <p><a href="contact.html#newsletter"> Subscribe </a> </p> <!-- links to newsletter section on contact page-->
+        </div>
+
+        <div class="social-media-icons">
+            <h3> Follow Us </h3>
+            <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+            <a href="https://x.com/" class="fa fa-twitter" target="_blank"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram" target="_blank"></a>
+        </div>
+
+        <div class="copyright">
+            <p> &copy; 2025 GAIA. </p>
+        </div>
+
+</footer>
